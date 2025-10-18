@@ -83,7 +83,7 @@ def scrape_and_save(section_id: str, filename: str, soup: BeautifulSoup) -> None
 
 
 def main():
-    url = "https://pacathletics.org/stats.aspx?path=baseball&year=2025"
+    url = "https://pacathletics.org/stats.aspx?path=baseball&year=2024"
 
     options = Options()
     options.add_argument("--headless")
@@ -98,8 +98,8 @@ def main():
     driver.quit()
 
     sections = {
-        "ind_hitting": "hitting_stats.csv",
-        "ind_pitching": "pitching_stats.csv"
+        "ind_hitting": "2024hitting_stats.csv",
+        "ind_pitching": "2024pitching_stats.csv"
     }
 
     for section_id, filename in sections.items():
