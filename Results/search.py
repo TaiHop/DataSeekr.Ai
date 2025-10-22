@@ -18,6 +18,7 @@ def search_player_by_name(name):
             print(f"School: {player[2]}")
             print(f"Batting Average: {player[3]}")
             print(f"ERA: {player[4]}")
+            print(f"Year: {player[5]}")
             print("-" * 40)  # Separator between players
     else:
         # If no player is found, print a message
