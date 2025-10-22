@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def search_player_by_name(name):
     # Connect to the SQLite database
     conn = sqlite3.connect('bb_stats.db')
@@ -26,6 +27,7 @@ def search_player_by_name(name):
 
     # Close the connection
     conn.close()
+
 
 # Main execution
 if __name__ == "__main__":
