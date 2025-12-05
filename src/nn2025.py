@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-
+# Creates player class
 class Player:
     def __init__(self, name: str = "", stats: List[str] = None):
         self.name = name
@@ -28,7 +28,7 @@ class Player:
             **{stat: getattr(self, stat) for stat in self.stats}
         }
 
-
+# extract player info
 def extract_players(soup: BeautifulSoup, section_id: str) -> List[Player]:
     """Extract players from a stats table section identified by `section_id`."""
     section = soup.find(id=section_id)
@@ -81,7 +81,7 @@ def scrape_and_save(section_id: str, filename: str, soup: BeautifulSoup) -> None
     players = extract_players(soup, section_id)
     write_csv(players, filename)
 
-
+# url that i parse which the data gets returned into 2 different csv files
 def main():
     url = "https://pacathletics.org/stats.aspx?path=baseball&year=2025"
 

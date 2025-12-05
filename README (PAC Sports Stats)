@@ -3,11 +3,21 @@ A repository that houses my comp experiment
 
 Description of Project
 
-For my project I am creating a scraping tool that will collect its data from the PAC website. Initially I am starting with baseball only with expansion to the other sports to be added later. The reason I am doing this experiment is to address ... The final outcome I expect to have a scraping tool that will collect stats from the PAC website automatically, making data access and findability of the stats easier because it will all be in one dataset.
+For my project I am creating a scraping tool that will collect its data from the PAC website. This will help make the stats more accesible and easier to find. Initially I am starting with baseball only with expansion to the other sports to be added later. The reason I am doing this experiment is to address ... The final outcome I expect to have a scraping tool that will collect stats from the PAC website automatically, making data access and findability of the stats easier because it will all be in one dataset.
 
 Tools:
 Beautifulsoup
 Python
 Selenium (python tool)
+
+## Steps to run
+
+- Once all the tools have been installed, you need to run 1 of the nn files to scrape the website. To collect more years run the remaining nn files.
+
+- Next would be to run the dbmaker file to add those players to a database
+
+- After that you run the search function; ran correctly it should give you stats and a graphic at the same time
+
+
 
 
